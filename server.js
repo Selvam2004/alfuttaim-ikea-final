@@ -19,8 +19,8 @@ app.post('/api/payment/initiate', async (req, res) => {
         console.log('Received payment request:', req.body);
         
         // Your Juspay API credentials (use environment variables in production)
-        const JUSPAY_API_KEY = process.env.JUSPAY_API_KEY || 'Basic MDExOTU5NURFNDI0NTE4OUJCNzdENUU1MDhDMURCOg==';
-        const MERCHANT_ID = process.env.MERCHANT_ID || 'seamena';
+        const JUSPAY_API_KEY = process.env.JUSPAY_API_KEY || 'Basic NDRBMjdCNjVENkM0NTQ0Qjg4QTQyMjAwQjYwRUI4Og==';
+        const MERCHANT_ID = process.env.MERCHANT_ID || 'alfuttaimtest';
         
         // Make the API call to Juspay from backend (no CORS issues)
         const juspayResponse = await fetch('https://sandbox.juspay.in/session', {
